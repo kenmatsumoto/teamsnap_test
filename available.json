@@ -1,0 +1,210 @@
+{
+    "collection": {
+        "version": "3.447.0",
+        "href": "https://apiv3.teamsnap.com/v3/availabilities",
+        "rel": "availabilities",
+        "template": {
+            "data": [
+                {
+                    "name": "status_code",
+                    "value": null
+                },
+                {
+                    "name": "notes",
+                    "value": null
+                },
+                {
+                    "name": "event_id",
+                    "value": null
+                },
+                {
+                    "name": "member_id",
+                    "value": null
+                },
+                {
+                    "name": "notes_author_member_id",
+                    "value": null
+                },
+                {
+                    "name": "source",
+                    "value": null
+                },
+                {
+                    "name": "type",
+                    "value": "availability"
+                }
+            ]
+        },
+        "links": [
+            {
+                "rel": "event",
+                "href": "https://apiv3.teamsnap.com/v3/events"
+            },
+            {
+                "rel": "member",
+                "href": "https://apiv3.teamsnap.com/v3/members"
+            },
+            {
+                "rel": "notes_author_member",
+                "href": "https://apiv3.teamsnap.com/v3/members"
+            },
+            {
+                "rel": "team",
+                "href": "https://apiv3.teamsnap.com/v3/teams"
+            },
+            {
+                "rel": "root",
+                "href": "https://apiv3.teamsnap.com/v3/"
+            },
+            {
+                "rel": "self",
+                "href": "https://apiv3.teamsnap.com/v3/availabilities/55722809"
+            }
+        ],
+        "queries": [
+            {
+                "rel": "search",
+                "href": "https://apiv3.teamsnap.com/v3/availabilities/search",
+                "sort": [
+                    "event_id",
+                    "start_date"
+                ],
+                "data": [
+                    {
+                        "name": "team_id",
+                        "value": null
+                    },
+                    {
+                        "name": "event_id",
+                        "value": null
+                    },
+                    {
+                        "name": "member_id",
+                        "value": null
+                    },
+                    {
+                        "name": "started_before",
+                        "value": null
+                    },
+                    {
+                        "name": "started_after",
+                        "value": null
+                    },
+                    {
+                        "name": "id",
+                        "value": null
+                    },
+                    {
+                        "name": "page_size",
+                        "value": null,
+                        "prompt": "The number of items to return for each page. Sending this parameter with the query will enable paging for the returned collection."
+                    },
+                    {
+                        "name": "page_number",
+                        "value": null,
+                        "prompt": "The number of the page to be returned. This requires that paging be turned on by also providing the page_size parameter."
+                    },
+                    {
+                        "name": "sort_event_id",
+                        "value": null,
+                        "prompt": "Sort the returned dataset based on the event_id field, valid values are 'asc' or 'desc'."
+                    },
+                    {
+                        "name": "sort_start_date",
+                        "value": null,
+                        "prompt": "Sort the returned dataset based on the start_date field, valid values are 'asc' or 'desc'."
+                    }
+                ]
+            }
+        ],
+        "commands": [
+            {
+                "rel": "bulk_mark_unset_availabilities",
+                "href": "https://apiv3.teamsnap.com/v3/availabilities/bulk_mark_unset_availabilities",
+                "prompt": "Mark all future unset availabilities to specified status_code for the specified member_id",
+                "data": [
+                    {
+                        "name": "status_code",
+                        "value": null
+                    },
+                    {
+                        "name": "member_id",
+                        "value": null
+                    },
+                    {
+                        "name": "started_after",
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "items": [
+            {
+                "href": "https://apiv3.teamsnap.com/v3/availabilities/55722809",
+                "data": [
+                    {
+                        "name": "id",
+                        "value": 55722809
+                    },
+                    {
+                        "name": "type",
+                        "value": "availability"
+                    },
+                    {
+                        "name": "event_id",
+                        "value": 7957692
+                    },
+                    {
+                        "name": "member_id",
+                        "value": 3834093
+                    },
+                    {
+                        "name": "notes",
+                        "value": ""
+                    },
+                    {
+                        "name": "notes_author_member_id",
+                        "value": null
+                    },
+                    {
+                        "name": "status",
+                        "value": "Yes. I will be there."
+                    },
+                    {
+                        "name": "status_code",
+                        "value": 1
+                    },
+                    {
+                        "name": "team_id",
+                        "value": 132470
+                    },
+                    {
+                        "name": "created_at",
+                        "value": "2014-01-07T00:31:50Z",
+                        "type": "DateTime"
+                    },
+                    {
+                        "name": "updated_at",
+                        "value": "2014-01-07T00:31:50Z",
+                        "type": "DateTime"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "event",
+                        "href": "https://apiv3.teamsnap.com/v3/events/7957692"
+                    },
+                    {
+                        "rel": "member",
+                        "href": "https://apiv3.teamsnap.com/v3/members/3834093"
+                    },
+                    {
+                        "rel": "team",
+                        "href": "https://apiv3.teamsnap.com/v3/teams/132470"
+                    }
+                ],
+                "rel": "availability-55722809"
+            }
+        ]
+    }
+}
